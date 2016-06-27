@@ -1,0 +1,27 @@
+$color-silver: silver;
+$color-white: #fff;
+$color-gray: #888;
+$color-green: #45ae72;
+$color-red: #df3034;
+$color-dark: #2C3E50;
+$color-primary: #00BDD7;
+$color-primary-font: #ffffff;
+$color-secondary: #2C3E50;
+$color-secondary-font: #fff;
+$color-primary-dark: darken($color-primary, 50%);
+
+$color-focus: #FFCD33;
+
+$color-light-bg: desaturate(lighten($color-secondary, 40%), 30%);
+$color-lighter-bg: lighten($color-light-bg, 8%);
+
+$fa-font-path: "fonts";
+$path-assets: 'assets/';
+
+:focus {
+    outline: 0;
+    /* or */
+    outline: none;
+}
+
+@import "brand/init";

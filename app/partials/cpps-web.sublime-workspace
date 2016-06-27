@@ -1,0 +1,380 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/richardhands/workspace/cpps-web/newsite/app/js/controllers.js",
+			"settings":
+			{
+				"buffer_size": 2849,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/richardhands/workspace/cpps-web/newsite/app/json/teamdetails.json",
+			"settings":
+			{
+				"buffer_size": 5382,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/richardhands/workspace/cpps-web/newsite/app/partials/teams.html",
+			"settings":
+			{
+				"buffer_size": 1894,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 367.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/richardhands/workspace/cpps-web/newsite",
+		"/Users/richardhands/workspace/cpps-web/newsite/app",
+		"/Users/richardhands/workspace/cpps-web/newsite/app/js",
+		"/Users/richardhands/workspace/cpps-web/newsite/app/json",
+		"/Users/richardhands/workspace/cpps-web/newsite/app/partials"
+	],
+	"file_history":
+	[
+		"/Users/richardhands/Downloads/localhost.har",
+		"/Users/richardhands/Documents/workspace/okpdb spring services/newsite/app/partials/teamdetails.html",
+		"/Users/richardhands/Documents/workspace/okpdb spring services/newsite/app/partials/results.html",
+		"/Users/richardhands/Documents/workspace/okpdb spring services/newsite/app/js/app.js",
+		"/Users/richardhands/Documents/workspace/okpdb spring services/newsite/app/partials/eventdetails.html",
+		"/Users/richardhands/Documents/workspace/okpdb spring services/newsite/app/js/controllers.js",
+		"/Users/richardhands/Documents/workspace/okpdb spring services/newsite/app/json/eventdetails.json",
+		"/Users/richardhands/Documents/workspace/okpdb spring services/newsite/holdingpage/index.html",
+		"/Users/richardhands/workspace/cpps/src/main/resources/historicoverall.json",
+		"/Users/richardhands/Documents/dotcmsdbbackupexport/37.122.209.87dotcms11-02-2016",
+		"/Users/richardhands/Documents/dotcmsdbbackupexport/37.122.209.87dotcms29-03-2016",
+		"/Users/richardhands/Documents/workspace/okpdb spring services/newsite/app/partials/events.html",
+		"/Users/richardhands/Documents/workspace/okpdb spring services/newsite/app/css/app.css",
+		"/Users/richardhands/Documents/workspace/okpdb spring services/newsite/app/partials/teams.html",
+		"/Users/richardhands/Documents/workspace/okpdb spring services/newsite/app/json/events.json",
+		"/Users/richardhands/Dropbox/UKPBL/CPPS/student_cup_2016_5man.xml",
+		"/Users/richardhands/Documents/workspace/okpdb spring services/newsite/app/json/teamdetails.json",
+		"/Users/richardhands/Documents/workspace/okpdb spring services/newsite/app/json/results.json",
+		"/Users/richardhands/Documents/workspace/okpdb spring services/newsite/app/json/teams.json",
+		"/Users/richardhands/Documents/stuff/19815822.txt",
+		"/Users/richardhands/Documents/stuff/19815822.jpg",
+		"/Users/richardhands/Documents/replacer.sublime-macro",
+		"/Users/richardhands/Documents/workspace/okpdb spring services/newsite/app/index.html",
+		"/Users/richardhands/Documents/workspace/okpdb spring services/newsite/src/index.html",
+		"/Users/richardhands/Documents/workspace/okpb/app/css/style.css",
+		"/Users/richardhands/Documents/workspace/okpb/app/index.html",
+		"/Users/richardhands/Documents/workspace/okpb/app/json/goldsponsors.json",
+		"/Users/richardhands/Downloads/src-update/css/style.css",
+		"/Users/richardhands/Downloads/src-update/index.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"404",
+			"455a7e7d-91ba-4d66-976a-5ef198588c4f",
+			"Round 1",
+			"contentlet",
+			"\"team2name\": \"London Tigers\"",
+			"false",
+			"</team2></match>",
+			"</team1><team2>",
+			"</team2></match>",
+			"</team1><team2>",
+			"<match><gamenum>",
+			"</team2></match>",
+			"</team1><team2>",
+			"</gamenum><team1>",
+			"\\t\\t",
+			"\\t\\t\\t\\t",
+			"\\t\\t\\t",
+			"-",
+			"\\t\\t",
+			"-",
+			"year",
+			"\"points\": 88,",
+			"2015",
+			"Elite",
+			"</tr>",
+			"</a></td>",
+			"\"round\"",
+			"    <td><a href=\"/app/spring/team/[0-9]*\">",
+			"    <td><a href=\"/app/spring/team/[0-9]?\">",
+			"    <td><a href=\"/app/spring/team/[0-9].\">",
+			"<tr"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"\"team2name\": \"London Tigers\",",
+			"",
+			"\\t",
+			"",
+			"\\t",
+			"",
+			"\\t",
+			"</team1><team2>",
+			"",
+			"</team1><team2>",
+			"",
+			"\"points\": 88",
+			"    ]\n},\n",
+			"",
+			"\"rounds\"",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/richardhands/workspace/cpps-web/newsite/app/js/controllers.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2849,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2369,
+								2369
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 641.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/richardhands/workspace/cpps-web/newsite/app/json/teamdetails.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5382,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/richardhands/workspace/cpps-web/newsite/app/partials/teams.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1894,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1466,
+								1466
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "cpps-web.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 190.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

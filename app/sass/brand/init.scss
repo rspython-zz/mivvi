@@ -1,0 +1,770 @@
+@import "mixins";
+@import "helpers";
+@import "loader";
+@import "angular-timeline-animations";
+@import "angular-timeline-bootstrap";
+@import "angular-timeline";
+
+* {
+    -webkit-font-smoothing: antialiased;
+    font-smooth: always;
+}
+
+
+.pointer {
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.logo-wide {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/* Start of CSS for Event page */
+
+.event .panel-body {
+    background: #BBBBBB;
+    border: 1px solid #444444;
+    padding: 0;
+    margin: 0;
+    height: 86px;
+}
+
+.event .panel-body.past {
+    background: #999999 !important;
+    border: 1px solid #444444;
+    padding: 0;
+    margin: 0;
+    height: 86px;
+}
+
+.event .panel-body > div {
+    padding: 0 10px;
+}
+
+.event .panel-body.past .rsvp {
+    border-left: none;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    background: #343434;
+    color: white;
+    height: 100%;
+}
+
+.event .panel-body .rsvp {
+    border-left: none;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    background: #646464;
+    color: white;
+    height: 100%;
+}
+
+.event .rsvp > div {
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    background: #424242;
+    width: 100%;
+}
+
+.event .rsvp i {
+    font-size: 1em;
+    display: block;
+    position: relative;
+    top: 17%;
+    margin-bottom: 5px;
+}
+
+.event .rsvp i:last-of-type {
+    font-size: 1.5em;
+    margin-top: -23px;
+}
+
+.event .rsvp span {
+    cursor: pointer;
+    padding: 0 5px;
+    margin: 5px 0;
+    width: 45%;
+}
+
+.event .rsvp span:first-of-type {
+    border-right: 1px solid white;
+}
+
+.event .rsvp span:hover {
+    color: #1565C0;
+}
+
+.event .info {
+    font-size: 28px;
+}
+
+.event .info > div,
+.event .info > ul {
+    font-size: 12px;
+}
+
+.event .author .profile-image {
+    background: white;
+    width: 30%;
+    border-radius: 50%;
+    border: 1px solid #CCC;
+    box-sizing: content-box;
+    z-index: 1;
+vertical-align: middle;
+}
+
+.event .author img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+/* Overwrites 
+.nav-tabs a {
+  background: #90CAF9;
+  color: white;
+}
+.info .nav-tabs li.active a {
+  background-color: #448AFF;
+  color: white;
+}
+.info .nav-tabs li:hover a, .info .nav-tabs li.active:hover a {
+  background: #00BCD4;
+  color: white;
+}
+.tab-content {
+  background: white;
+  border-radius: 0 10px;
+  padding: 10px;
+}
+
+*/
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+
+    .event .panel-body {
+        height: 110px;
+    }
+    .event .rsvp {
+        min-height: 100%;
+    }
+    .event .rsvp i {
+        font-size: 3.5em;
+        top: 5%;
+    }
+    .event .panel-body .author {
+        position: relative;
+        color: #2196F3;
+        padding: 10px;
+        height: 100%;
+    }
+    .event .profile {
+        position: relative;
+        z-index: 0;
+        top: -5px;
+        padding-left: 55px;
+        height: 100%;
+        left: 10%;
+    }
+    .event .profile strong {
+        display: block;
+        color: white;
+        font: 20px bold 'Fredoka One', serif;
+        -webkit-text-stroke-width: .6px;
+        -webkit-text-stroke-color: #448AFF;
+        margin-bottom: 5px;
+    }
+    .event .author .profile i {
+        color: #448AFF;
+        padding-left: 0;
+    }
+    .event .profile .links {
+        position: absolute;
+        bottom: 0;
+    }
+    .event .profile article {
+        padding: 0 41px 0 0;
+    }
+    .event .author .profile i:hover {
+        color: #00BCD4;
+    }
+    .event .author .profile-image {
+        position: absolute;
+        background: white;
+        padding: 3px;
+        width: 30%;
+        border-radius: 50%;
+        border: 1px solid #CCC;
+        box-sizing: content-box;
+        z-index: 1;
+        top: 13px;
+    }
+    .event .author img {
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .event .profile {
+        left: 17%;
+    }
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
+
+
+/* end of CSS for event page */
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+    overflow: hidden;
+}
+
+.carousel-fade .carousel-inner a {
+    display: block;
+    height: 90px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+
+/*
+  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+  Need to override the 3.3 new styles for modern browsers & apply opacity
+*/
+
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.carousel-indicators li {
+    visibility: hidden;
+}
+
+html {
+/*    background: url(../images/Background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+}
+
+body {
+    background: rgba(0, 0, 0, 1.0);
+}
+
+a {
+    color: black;
+}
+
+.navbar-inverse {
+    font-family: 'veteran_typewriterregular';
+    border-top: 2px solid #f26522;
+    border-bottom: 2px solid #EE2961;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.panel {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.panel-header {
+    background: rgba(180, 180, 180, 0.7);
+}
+
+ul.nav.navbar-nav.navbar-right {
+    padding-left: 0px;
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    width: 80px;
+    height: auto;
+    padding: 0;
+}
+
+.navbar-brand img {
+    width: 120px;
+    height: auto;
+    z-index: 3000;
+}
+
+.nav>li>a {
+    font-size: 2em;
+    text-align: right;
+}
+
+.rel {
+    position: relative;
+}
+
+.scores {
+    font-size: .75em;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    text-align: center;
+    min-width: 100px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: .3;
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-transform: scale(1, 0);
+    display: block;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+}
+
+.open > .dropdown-menu {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    .navbar-nav {
+        padding-left: 0;
+        padding-top: 30px;
+    }
+    body {
+        padding-top: 90px;
+    }
+}
+
+
+/* Adverts */
+
+#banner {
+    margin: 0 auto 30px;
+    width: 728px;
+    height: 90px;
+    display: block;
+    background: black;
+    position: relative;
+    overflow: hidden;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+#banner iframe {
+    width: 100%;
+    height: 90px;
+    overflow: hidden;
+    -webkit-transform: scale(1);
+    -webkit-transform-origin: 0 0;
+    -moz-transform: scale(1);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(1);
+    -o-transform-origin: 0 0;
+    -ms-transform: scale(1);
+    -ms-transform-origin: 0 0;
+    transform: scale(1);
+    transform-origin: 0 0;
+}
+
+
+/*
+Tab Styling
+*/
+
+.tab-content .tab-pane.active {
+    background: #fff;
+    border-radius: 0 3px 3px 3px;
+    padding: 25px 15px 10px;
+    border: 0 !important;
+}
+
+.tab-heading .accordion-toggle {
+    display: block;
+}
+
+.panel-body .nav-tabs {
+    border: 0;
+}
+
+.panel-body .nav-tabs li.active a {
+    font-weight: bold;
+    border: 0;
+}
+
+.panel-body .nav-tabs {
+    font-size: 0;
+    text-align: left;
+}
+
+.panel-body .nav-tabs li {
+    margin-right: 3px;
+    margin-bottom: 0;
+    border: 0;
+    line-height: 32px;
+    border-radius: 3px 3px 0 0;
+    display: inline-block;
+    float: none;
+    position: relative;
+    top: 3px;
+}
+
+.panel-body .nav-tabs > li a {
+    margin: 0;
+    padding: 0 25px;
+    line-height: 30px;
+    display: block;
+    border: 0;
+}
+
+.panel-body .nav-tabs li:hover a {
+    border: 0;
+    top: 0;
+}
+
+.panel-body .nav-tabs li:hover,
+.panel-body .nav-tabs li.active {
+    top: 0;
+    line-height: 35px;
+}
+
+.panel-body .nav-tabs li:hover a,
+.panel-body .nav-tabs li.active a {
+    line-height: 35px;
+}
+
+.panel-body .nav-tabs li:not(.active) {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.panel-header {
+    padding: 4px 10px 0;
+}
+
+.panel-body .panel-heading {
+    padding: 0;
+}
+
+.panel-body .panel-title a {
+    display: block;
+    padding: 10px;
+}
+
+.gallery {
+    list-style: none;
+    li {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 15px 15px 0;
+        cursor: pointer;
+        width: 130px;
+        height: 90px;
+        overflow: hidden;
+        img {
+            min-height: 90px;
+            display: block;
+        }
+    }
+}
+
+.carousel-control {
+    display: none;
+}
+
+@media screen 
+    and (min-device-width : 1080px) 
+    and (max-device-width : 1920px) 
+    and (min-resolution: 401dpi) 
+    and (device-aspect-ratio:16/9) 
+{ 
+    html {
+/*        background: url(../images/bg-600-long.jpg) no-repeat center center fixed;
+        background-size: cover; */
+    }
+
+    body {
+      font-size: 1em;
+    }
+}
+
+@media screen 
+    and (min-device-width : 750px) 
+    and (max-device-width : 1334px) 
+    and (min-resolution: 326dpi) 
+{ 
+    html {
+/*        background: url(../images/bg-600-long.jpg) no-repeat center center fixed;
+        background-size: cover; */
+    }
+
+    body {
+      font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 0) and (max-width: 750px) {
+    html {
+/*        background: url(../images/bg-600-long.jpg) no-repeat center center fixed;
+        background-size: cover; */
+    }
+
+    body {
+      font-size: 1em;
+    }
+
+    #banner {
+        height: 80px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 300;
+        margin-bottom: 0;
+    }
+    #banner iframe {}
+
+    .event .info {
+      font-size: 18px;
+    }
+
+    .event .panel-body>div{
+      padding: 12px 10px;
+    }
+
+}
+@media only screen and (min-width: 0) and (max-width: 767px) {
+.event .rsvp i:last-of-type {
+  margin-top: 0px;
+}
+
+}
+@media only screen and (min-width: 0) and (max-width: 480px) {
+    #banner {
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 300;
+        margin-bottom: 0;
+    }
+    #banner iframe {}
+
+}
+
+@media only screen and (min-width: 0) and (max-width: 320px) {
+    #banner {
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 300;
+        margin-bottom: 0;
+    }
+    #banner iframe {}
+}
+
+.page-holder.ng-enter {
+    z-index: 8888;
+    /*    animation-duration: 500ms;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-name: fadeInUp; */
+    display: block;
+    top: 0;
+    position: relative;
+}
+
+.page-holder.ng-leave {
+    z-index: 9999;
+    /*    animation-duration: 500ms;
+    transition-timing-function: ease-out;
+    animation-fill-mode: both;
+    animation-name: fadeOutDown;*/
+    display: block;
+    top: 0;
+    position: relative;
+}
+
+.team-center {
+  margin-left:25%;
+}
+
+.center {
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'veteran_typewriterregular';
+    src: url('fonts/veteran_typewriter-webfont.eot');
+    src: url('fonts/veteran_typewriter-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/veteran_typewriter-webfont.woff') format('woff'),
+         url('fonts/veteran_typewriter-webfont.ttf') format('truetype'),
+         url('fonts/veteran_typewriter-webfont.svg#veteran_typewriterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.post-content {
+    top:0;
+    left:0;
+    position: absolute;
+    font-family: veteran_typewriterregular;
+    font-size: 8em;
+    letter-spacing: 0.15em;
+    line-height: 1;
+}
+
+.post-content-icon {
+    bottom:0px;
+    right:15px;
+    position: absolute;
+}
+
+.post-content-icon-2 {
+    bottom:4px;
+    right:50px;
+    position: absolute;
+}
+
+.post-content-icon-3 {
+    bottom:4px;
+    right:85px;
+    position: absolute;
+}
+
+.post-content-icon-4 {
+    bottom:4px;
+    right:120px;
+    position: absolute;
+}
+
+.banner-thumbnail{
+    position:relative;
+    
+}
+
+.textyellow {
+    color: #f26522;
+}
+
+.textred {
+    color: #ee2961;
+}
+
+
+.navbar .navbar-inner {
+    padding: 0;
+}
+
+.navbar .nav {
+    margin: 0;
+    display: table;
+    width: 100%;
+}
+
+.navbar .nav > li {
+    display: table-cell;
+    width: 1%;
+    float: none;
+    text-align: center;
+}
+
+
+.navbar .nav li:first-child a {
+    border-left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.navbar .nav li:last-child a {
+    border-right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.show {
+    visibility: show;
+}
+
+.twitter-panel {
+    background-color: #292f33
+}

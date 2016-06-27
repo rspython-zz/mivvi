@@ -1,0 +1,48 @@
+.center-block {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+}
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+$i: 0;
+@for $i from 0 through 50 {
+    .mb-#{$i} {
+        margin-bottom: #{$i}px !important;
+    }
+    .mt-#{$i} {
+        margin-top: #{$i}px !important;
+    }
+    .mr-#{$i} {
+        margin-right: #{$i}px !important;
+    }
+    .ml-#{$i} {
+        margin-left: #{$i}px !important;
+    }
+    .pb-#{$i} {
+        padding-bottom: #{$i}px !important;
+    }
+    .pt-#{$i} {
+        padding-top: #{$i}px !important;
+    }
+    .pr-#{$i} {
+        padding-right: #{$i}px !important;
+    }
+    .pl-#{$i} {
+        padding-left: #{$i}px !important;
+    }
+    .p-#{$i} {
+        padding: #{$i}px !important;
+    }
+    .m-#{$i} {
+        margin: #{$i}px !important;
+    }
+    $i: $i + 1;
+}

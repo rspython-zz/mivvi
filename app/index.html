@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mivviApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mivvi</title>
+    <meta name="description" content="Mivvi The Band">
+    <meta name="author" content="Mivvi">
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- inject:js -->
+    <!-- endinject -->
+</head>
+
+<body ng-controller="MivviCtrl" twitter-widget-initialize>
+    <div id="fb-root"></div>
+    <script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 banner-thumbnail">
+                <img src="/images/mivvibanner.png" class="img-responsive" />
+                <div class="caption post-content pl-30 pt-20">
+                    <p><span class="textyellow">M</span><span class="textred">i</span><span class="textyellow">v</span><span class="textred">v</span><span class="textyellow">i</span></p>
+                </div>
+                <div class="post-content-icon-4">
+                    <a href="https://www.youtube.com/user/mivviband"><img src="/images/youtubeicon.png" /></a>
+                </div>
+                <div class="post-content-icon-3">
+                    <a href="https://www.facebook.com/Mivvi/"><img src="/images/facebook_icon.png" /></a>
+                </div>
+                <div class="post-content-icon-2">
+                    <a href="https://twitter.com/mivviuk"><img src="/images/icon-twitterLogo.png" /></a>
+                </div>
+                <div class="post-content-icon">
+                    <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fmivvi&color=orange_white&size=32" style="width: 32px; height: 32px;"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-inverse">
+                    <div class="container rel">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" ng-click="navbarCollapsed = !navbarCollapsed">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div id="navbar" class="navbar-collapse" uib-collapse="navbarCollapsed">
+                            <ul class="nav navbar-nav">
+                                <li ng-class="{ active: isActive('/news')}"><a href="#/news" ng-click="navbarCollapsed = true">News</a></li>
+                                <li ng-class="{ active: isActive('/bio')}"><a href="#/bio" ng-click="navbarCollapsed = true">Biography</a></li>
+                                <li ng-class="{ active: isActive('/discography')}"><a href="#/discography" ng-click="navbarCollapsed = true">Discography</a></li>
+                                <li ng-class="{ active: isActive('/media')}"><a href="#/media" ng-click="navbarCollapsed = true">Media</a></li>
+                                <li ng-class="{ active: isActive('/photos')}"><a href="#/photos" ng-click="navbarCollapsed = true">Photos</a></li>
+                                <li ng-class="{ active: isActive('/mailinglist')}"><a href="#/mailinglist" ng-click="navbarCollapsed = true">Mailing List</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div ng-view class="page-holder"></div>
+                <div class="text-center textyellow">website design and copyright &copy; 2016, Mivvi</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
