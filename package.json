@@ -1,7 +1,7 @@
 {
   "version": "0.0.1",
   "private": true,
-  "name": "cpps",
+  "name": "mivvi",
   "description": "Angular Mivvi app",
   "devDependencies": {
     "angular-mocks": "1.4.x",
