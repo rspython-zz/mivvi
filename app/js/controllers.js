@@ -10,15 +10,21 @@
         .module('mivviApp')
         .controller('MivviCtrl', MivviCtrl);
 
-    MivviCtrl.$inject = ['$scope', '$location', 'Analytics'];
+    MivviCtrl.$inject = ['$scope', '$location', 'Analytics', 'ngDialog'];
 
 
-    function MivviCtrl($scope, $location, Analytics) {
+    function MivviCtrl($scope, $location, Analytics, ngDialog) {
         $scope.navbarCollapsed = true;
         $scope.isActive = '/News';
         $scope.isActive = function(viewLocation) {
             return viewLocation === $location.path();
         };
+
+        $scope.clickToOpen = function () {
+                ngDialog.open({
+                    template: 'partials/mailingpop.html',
+                    scope: $scope
+                });        };
 
         var init = function(Analytics) {
             // fire scripts here

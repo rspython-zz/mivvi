@@ -729,34 +729,6 @@ Tab Styling
 }
 
 
-.navbar .navbar-inner {
-    padding: 0;
-}
-
-.navbar .nav {
-    margin: 0;
-    display: table;
-    width: 100%;
-}
-
-.navbar .nav > li {
-    display: table-cell;
-    width: 1%;
-    float: none;
-    text-align: center;
-}
-
-
-.navbar .nav li:first-child a {
-    border-left: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.navbar .nav li:last-child a {
-    border-right: 0;
-    border-radius: 0 3px 3px 0;
-}
-
 .hide {
     visibility: hidden;
 }
@@ -767,4 +739,11 @@ Tab Styling
 
 .twitter-panel {
     background-color: #292f33
+}
+
+.myrounded {
+    @include button(#3d3d3d, $color-white);
+    position: absolute;
+    bottom: 4px;
+    left: 15px;
 }

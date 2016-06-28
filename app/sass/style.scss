@@ -1,6 +1,7 @@
 $color-silver: silver;
 $color-white: #fff;
 $color-gray: #888;
+$color-darkgray: #3d3d3d;
 $color-green: #45ae72;
 $color-red: #df3034;
 $color-dark: #2C3E50;
@@ -17,6 +18,10 @@ $color-lighter-bg: lighten($color-light-bg, 8%);
 
 $fa-font-path: "fonts";
 $path-assets: 'assets/';
+
+$default-text-shadow-color: rgba(red, 0.6);
+$default-text-shadow-blur: 3px;
+$default-text-shadow-v-offset: 1px
 
 :focus {
     outline: 0;

@@ -18,7 +18,7 @@
     text-align: center;
     text-decoration: none;
     font: 14px/100% Arial, Helvetica, sans-serif;
-    padding: .5em 2em .55em;
+    padding: .2em .5em .2em;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
     @include rounded();
     @include box-shadow(0, 1px, 2px, rgba(0, 0, 0, 0.2));
@@ -26,17 +26,11 @@
     font-weight: bold;
     border: solid 1px darken($color, 18%);
     background: $color;
-    @include gradient(saturate($color, 15%), darken($color, 15%));
+    @include gradient(lighten($color, 15%), darken($color, 15%));
     &:hover {
         text-decoration: none;
         background: saturate($color, 10%);
-        @include gradient(saturate($color, 5%), darken($color, 5%));
-    }
-    &:active {
-        position: relative;
-        top: 1px;
-        color: saturate($color, 15%);
-        @include gradient(saturate($color, 15%), lighten($color, 15%));
+        @include gradient(lighten($color, 5%), darken($color, 5%));
     }
 }
 

@@ -15,7 +15,8 @@
             'angular-google-analytics',
             'angular-scroll-animate',
             'ngOnload',
-            'twitter.timeline'
+            'twitter.timeline',
+            'ngDialog'
         ])
         .config(mivviAppConfig);
 
